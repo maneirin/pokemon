@@ -86,8 +86,6 @@ h1 {
 
 
 .pokemon-card h3:first-of-type::after {
-  content: "41 HP";
-  color: #e60000;
   font-weight: bold;
   font-size: 14px;
 }
