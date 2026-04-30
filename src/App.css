@@ -86,7 +86,7 @@ h1 {
 
 
 .pokemon-card h3:first-of-type::after {
-  content: "43 HP";
+  content: "41 HP";
   color: #e60000;
   font-weight: bold;
   font-size: 14px;
@@ -123,4 +123,17 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.types{
+  background: linear-gradient(to left, #ffffff, #2f8fd6);
+  border-radius: 12px;
+  padding: 6px;
+  width: 80px;
+  border: 1px solid wheat;
+  color: #002b45;
+  font-weight: bold;
+  box-shadow:
+    inset 0 3px 10px rgba(0,0,0,0.4),
+    0 6px 12px rgba(0,0,0,0.6);
 }

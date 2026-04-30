@@ -53,6 +53,13 @@ function App() {
           <h3>{pokemons.name}</h3>
           <img src={Froakie} alt={pokemons.name} height="400" />
           <h3>{pokemons.stats[0].stat.name + ' ' + pokemons.stats[0].base_stat + ' ' + pokemons.stats[1].stat.name + ' ' + pokemons.stats[0].base_stat}</h3>
+          <div className="types">
+            {pokemons.types.map((type, index) => (
+              <span key={index} className={`type ${type.type.name}`}>
+                {type.type.name}
+              </span>
+            ))}
+          </div>
 
         </div>
       </div>
