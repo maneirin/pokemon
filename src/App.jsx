@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import Froakie from '../../meu-app/src/assets/foto.jpg'
+import Froakie from '../src/assets/foto.jpg'
+import Background from '../src/assets/wallpaperHD.jpg'
 import './App.css';
 
 
@@ -26,7 +27,7 @@ function App() {
       }
     };
     getData();
-  }, {});
+  }, []);
 
   if (loading)
     return <div className="loader">
@@ -45,14 +46,30 @@ function App() {
 
 
   return (
-    <div className="App">
+    <div className="container">
       <h1>Poke card</h1>
       <div className="pokemon-container">
         <div className="pokemon-card">
 
           <h3>{pokemons.name}</h3>
           <img src={Froakie} alt={pokemons.name} height="400" />
-          <h3>{pokemons.stats[0].stat.name + ' ' + pokemons.stats[0].base_stat + ' ' + pokemons.stats[1].stat.name + ' ' + pokemons.stats[0].base_stat}</h3>
+
+          <div className="stats">
+            <div className="stat">
+              <span>HP: {pokemons.stats[0].base_stat}</span>
+            </div>
+
+            <div className="stat">
+              <span>ATTACK: {pokemons.stats[0].base_stat}</span>
+            </div>
+            <div className="stat">
+              <span>--</span>
+            </div>
+            <div className="stat">
+              <span>--</span>
+            </div>
+          </div>
+
           <div className="types">
             {pokemons.types.map((type, index) => (
               <span key={index} className={`type ${type.type.name}`}>
