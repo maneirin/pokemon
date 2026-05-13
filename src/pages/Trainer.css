@@ -1,0 +1,160 @@
+.trainer-page{
+  min-height:100vh;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  background:
+  linear-gradient(
+    to bottom,
+    black,
+    rgb(43, 43, 43)
+  );
+}
+
+.trainer-card{
+  width:420px;
+
+  padding:35px;
+
+  border-radius:30px;
+
+  backdrop-filter:blur(10px);
+
+  background:rgba(20,20,20,0.75);
+
+  border:2px solid rgba(255,255,255,0.15);
+
+  box-shadow:
+  0 0 30px rgba(0,0,0,0.6),
+  0 0 50px rgba(236, 236, 236, 0.15);
+
+  text-align:center;
+
+  color:white;
+}
+
+.trainer-avatar{
+  width:180px;
+  height:180px;
+
+  object-fit:cover;
+
+  border-radius:50%;
+
+  border:5px solid white;
+
+  margin-bottom:20px;
+
+  box-shadow:
+  0 0 20px rgba(255,255,255,0.3);
+}
+
+.title{
+  font-size:38px;
+
+  margin-bottom:25px;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+}
+
+.trainer-info p{
+  font-size:20px;
+
+  margin:14px 0;
+
+  letter-spacing:1px;
+}
+
+.pokeball-area{
+  margin-top:35px;
+}
+
+.pokeball{
+  width:100px;
+  height:100px;
+
+  border:none;
+  background:none;
+
+  position:relative;
+
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+.pokeball:hover{
+  transform:scale(1.1);
+}
+
+.pokeball-top{
+  position:absolute;
+
+  top:0;
+  left:0;
+
+  width:100%;
+  height:50%;
+
+  background:#ff1f1f;
+
+  border-radius:
+  100px 100px 0 0;
+
+  border:4px solid black;
+  border-bottom:none;
+
+  transition:0.45s ease;
+
+  z-index:2;
+}
+
+.pokeball-bottom{
+  position:absolute;
+
+  bottom:0;
+  left:0;
+
+  width:100%;
+  height:50%;
+
+  background:white;
+
+  border-radius:
+  0 0 100px 100px;
+
+  border:4px solid black;
+  border-top:none;
+}
+
+.pokeball-center{
+  position:absolute;
+
+  top:50%;
+  left:50%;
+
+  transform:translate(-50%, -50%);
+
+  width:28px;
+  height:28px;
+
+  border-radius:50%;
+
+  background:white;
+
+  border:6px solid black;
+
+  z-index:5;
+}
+
+/* ABRIR */
+
+.pokeball:hover .pokeball-top{
+  transform:
+  translateY(-35px)
+  rotate(-12deg);
+}
