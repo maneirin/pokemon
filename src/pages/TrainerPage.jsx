@@ -38,7 +38,7 @@ function TrainerPage() {
 
         <div className="pokeball-area">
 
-          <Link to="/pokemon">
+          <Link to="/pokemon/froakie">
 
             <button className="pokeball">
 
@@ -51,7 +51,7 @@ function TrainerPage() {
             </button>
 
           </Link>
-          <Link to="/oshawott">
+          <Link to="/pokemon/oshawott">
 
             <button className="pokeball">
 

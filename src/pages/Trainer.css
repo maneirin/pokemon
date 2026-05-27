@@ -71,6 +71,8 @@
 
 .pokeball-area{
   margin-top:35px;
+  display:flex;
+  gap:25px; 
 }
 
 .pokeball{
@@ -129,6 +131,7 @@
 
   border:4px solid black;
   border-top:none;
+
 }
 
 .pokeball-center{
